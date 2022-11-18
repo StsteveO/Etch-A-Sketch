@@ -1,3 +1,54 @@
+/* set-up border-box */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+:root{
+    /* --custom name: value; */
+
+    /* BACKGROUND COLORS */
+    /* header and footer background */
+    --navy-clr: #1f2937;
+    /* button and call to action background */
+    --sky-clr: #3882f6;
+    /* quote section background */
+    --gray-clr: #e5e7eb;
+
+    /* FONT COLORS */
+    /* hero main ("this website is awesome") text */
+    --hero-main-txt: #f9faf8;
+    /* hero secondary, header link text */
+    --hero-secondary-txt: #e5e7eb;
+    /* header logo text */
+    --header-logo-txt: #f9faf8;
+    /* header ("some random information") text */
+    --header-txt: #1f2937;
+    /* quote text */
+    --quote-txt: #1f2937;
+
+    /* example: color: var(--navy-clr) */
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+table, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table{
+    width: 450px;
+    height: 450px;
+    margin-inline: auto;
+}
+
 .testing{
     color: blue;
 }
