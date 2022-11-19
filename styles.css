@@ -49,22 +49,10 @@ table{
     margin-inline: auto;
 }
 
-.change-square{
+.change-square-background-color{
     background-color: black;
 }
-
-/* td:hover{
-    background-color: black;
-} */
 
 .resize-button{
     text-align: center;
-}
-
-.testing{
-    color: blue;
-}
-
-.master-container{
-    color: blue;
 }
