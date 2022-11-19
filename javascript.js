@@ -4,11 +4,11 @@ const table = document.querySelector(`[data-container='table']`);
 
 
 //This is the actual table.
-for (let i = 1; i < 17; i++) {
+for (let i = 0; i < 16; i++) {
     const tableRows= document.createElement('tr');
     table.appendChild(tableRows);   
 
-    for (let j = 1; j < 17; j++) {
+    for (let j = 0; j < 16; j++) {
         const tableColumnCells= document.createElement('td');
         tableRows.appendChild(tableColumnCells); 
 
@@ -31,7 +31,24 @@ resizeGridButton.addEventListener('click',function() {
 const rowNodeList=document.querySelectorAll('tr');
 const rowAmount= rowNodeList.length;
 
+if (rowAmount<newGridNumber) {
+    amountAdded=newGridNumber-rowAmount;
 
+    console.log(amountAdded);
+    
+    for (let i = 0; i < amountAdded; i++) {
+        const tableRows= document.createElement('tr');
+        table.appendChild(tableRows); 
+
+        for (let j = 0; j < (rowAmount+amountAdded); j++) {
+            const tableColumnCells= document.createElement('td');
+            rowNodeList.forEach();
+            //what do you wwant the computer to do at each row??
+        
+    }
+}
+
+}
 }); 
 
 
