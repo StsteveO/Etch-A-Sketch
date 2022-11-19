@@ -49,6 +49,18 @@ table{
     margin-inline: auto;
 }
 
+.change-square{
+    background-color: black;
+}
+
+/* td:hover{
+    background-color: black;
+} */
+
+.resize-button{
+    text-align: center;
+}
+
 .testing{
     color: blue;
 }
