@@ -8,8 +8,12 @@
     <link rel="stylesheet" href="../Etch-A-Sketch/styles.css">
 </head>
 <body>
+    <header>
+        <div class="title">Etch-A-Sketch</div>
+        <button onclick='window.location.reload()' class="restart-button">Restart</button>
+    </header>
     <div class="resize-button">
-        <button>
+        <button class="resize-button-content">
             Resize The Grid!
         </button>
     </div>
@@ -18,6 +22,10 @@
         <table class="table" id="table" data-container="table">
         </table>
     </div>
+
+    <footer>
+        <div class="thank-you-for-playing">Thank you for playing!</div>
+    </footer>
     
 
 <script src="../Etch-A-Sketch/javascript.js"></script>

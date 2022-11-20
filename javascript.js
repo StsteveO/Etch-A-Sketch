@@ -15,6 +15,10 @@ for (let i = 0; i < dimensions; i++) {
         tableColumnCells.addEventListener('mouseover', function() {
             tableColumnCells.classList.add('change-square-background-color');
         });
+
+        tableColumnCells.addEventListener('touchmove', function() {
+            tableColumnCells.classList.add('change-square-background-color');
+        });
     }
 }
 
@@ -35,7 +39,6 @@ resizeGridButton.addEventListener('click',function() {
     newTable.classList.add('table');
     newTable.setAttribute('id', 'table');
     masterContainer.appendChild(newTable);
-    console.log(newTable);
 
     for (let i = 0; i < newGridNumber; i++) {
         const tableRows= document.createElement('tr');
@@ -46,6 +49,10 @@ resizeGridButton.addEventListener('click',function() {
             tableRows.appendChild(tableColumnCells); 
     
             tableColumnCells.addEventListener('mouseover', function() {
+                tableColumnCells.classList.add('change-square-background-color');
+            });
+
+            tableColumnCells.addEventListener('touchmove', function() {
                 tableColumnCells.classList.add('change-square-background-color');
             });
         }

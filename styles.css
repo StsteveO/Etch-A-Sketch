@@ -36,10 +36,10 @@ body{
     padding: 0px;
     display: flex;
     flex-direction: column;
-}
+    background-image: linear-gradient(to right top, #919191, #a594a4, #c692a5, #e59292, #f29b71, #f29b71, #f29b71, #f29b71, #e59292, #c692a5, #a594a4, #919191);}
 
 table, td{
-    border: 1px solid black;
+    border: .5px solid black;
     border-collapse: collapse;
 }
 
@@ -47,6 +47,7 @@ table{
     width: 450px;
     height: 450px;
     margin-inline: auto;
+    background-color: white;
 }
 
 .change-square-background-color{
@@ -55,4 +56,55 @@ table{
 
 .resize-button{
     text-align: center;
+}
+
+.resize-button-content:hover{
+    background-color: var(--navy-clr);
+}
+
+.resize-button-content{
+    border-radius: 20px;
+    border-style: outset;
+    background-color: var(--sky-clr);
+    color: var(--hero-main-txt);
+    padding: 2% 4%;
+    margin-bottom: 5%;
+}
+
+.master-container{
+    min-height: 100vh;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--navy-clr);
+    color: var(--hero-main-txt);
+    padding: 10% 4%;
+    margin-bottom: 15%;
+}
+
+.title{
+    font-size: 400%;
+}
+
+.restart-button{
+    padding: 0 3%;
+    border-radius: 20px;
+    border-style: outset;
+    background-color: var(--sky-clr);
+    color: var(--hero-main-txt);
+}
+
+.restart-button:hover{
+    background-color: #f29b71;
+}
+
+footer{
+    position: sticky;
+    top: 100%;
+    text-align: center;
+    background-color: var(--navy-clr);
+    color: var(--hero-main-txt);
+    padding: 10% 4% 7% 4%;
 }
